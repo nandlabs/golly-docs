@@ -1,6 +1,6 @@
 # golly-docs
 
-This repository is for the documentation of the Golly project. The Golly project is a template repository for creating new Go projects. The template repository is available at [nandlabs/golly](https://github.com/nandlabs/golly).
+This repository is for the documentation of the [Golly project](https://github.com/nandlabs/golly).
 
 ## Contributing
 
