@@ -1,5 +1,19 @@
 # Hugo configuration file
+baseURL: "https://golly.nandlabs.io"
 title: Golly
+
+
+outputs:
+  home: [HTML]
+  page: [HTML]
+  section: [HTML, RSS]
+
+defaultContentLanguage: en
+languages:
+  en:
+    languageName: English
+    weight: 1
+    title: Golly
 
 # import hextra as module
 module:
@@ -40,7 +54,7 @@ menu:
 params:
   navbar:
     displayTitle: true
-    displayLogo: true
+    displayLogo: false
 
   footer:
     displayCopyright: false
