@@ -1,5 +1,5 @@
 ---
-title: Hextra Theme
+title: Golly! Extensive Toolkit for Go
 layout: hextra-home
 ---
 
