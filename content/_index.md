@@ -69,6 +69,7 @@ layout: hextra-home
 
     title="Cli"
     subtitle="CLI offers an intuitive API for creating command-line applications, enabling the development of complex command structures with ease. It includes robust argument parsing and validation to ensure accurate and user-friendly command execution."
+    link="docs/cli"
     >}}
 
 {{< hextra/feature-card
