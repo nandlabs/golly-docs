@@ -2,10 +2,10 @@
 title: Golly
 draft: false
 prev: /docs
-next: /docs/cli
+next: /docs/core
 ---
 
-Welcome to **Golly**, a robust collection of enterprise-grade, open-source libraries written in Go (Golang). This project is designed to simplify and enhance the development of modern software systems by providing developers with highly reusable, well-documented utilities tailored to meet enterprise needs. Whether you are building scalable microservices, crafting middleware, or handling complex messaging systems, Golly offers solutions to common programming challenges while adhering to Go’s philosophy of simplicity and performance.
+Welcome to **Golly**, a robust collection of enterprise-grade, open-source libraries written in Go (Golang). This project is designed to simplify and enhance the development of modern software systems by providing developers with highly reusable, well-documented utilities tailored to meet enterprise needs. Whether you are building scalable microservices, crafting middleware, or handling complex messaging systems, Golly offers solutions to common programming challenges while adhering to Go's philosophy of simplicity and performance.
 
 ## Background and Motivation
 
@@ -21,7 +21,9 @@ The project aims to be a **self-contained toolkit**, minimizing the need for add
 
 ## Available Packages
 
-Golly contains a rich set of libraries to handle various aspects of development. Here's a breakdown of some core packages available in the Golly repository:
+Golly contains a rich set of libraries to handle various aspects of development. Below is a breakdown of the core packages available in the Golly repository:
+
+### Core Packages
 
 1. **Clients**: A flexible package to manage different types of clients. This module supports various client types like REST and messaging clients, simplifying the integration of external services into your application.
 2. **CLI (Command-Line Interface)**: This package provides easy-to-use APIs for building complex command-line applications. It supports argument parsing, validation, and command structuring, making it ideal for automation tasks or command-line tools.
