@@ -37,6 +37,11 @@ layout: hextra-home
 
 {{< hextra/feature-card
 
+    title="GenAI"
+    subtitle="GenAI provides a unified interface for generative AI capabilities, allowing seamless integration with different AI providers. It includes message exchange, template-based prompt management, configuration options, and memory management for stateful interactions." >}}
+
+{{< hextra/feature-card
+
     title="Turbo"
     subtitle="Turbo is a user-friendly Go web framework designed for API development, featuring smart HTTP routing and flexible filter capabilities."
     >}}
