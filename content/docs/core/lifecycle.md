@@ -2,7 +2,7 @@
 title: Lifecycle Package
 draft: false
 prev: /docs/core/l3
-next: /docs/core/messaging
+next: /docs/core/managers
 ---
 
 The `lifecycle` package provides a framework for managing the lifecycle of application components in Go. It offers a structured approach to starting and stopping components in a controlled manner, ensuring proper initialization and cleanup.

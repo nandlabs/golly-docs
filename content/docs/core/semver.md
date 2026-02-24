@@ -1,7 +1,7 @@
 ---
 title: SemVer Package
 draft: false
-prev: /docs/core/rest
+prev: /docs/core/secrets
 next: /docs/core/testing
 ---
 
