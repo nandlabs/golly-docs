@@ -79,14 +79,14 @@ Creates a new pool with the given creator/destroyer functions and capacity setti
 
 ### Pool Methods
 
-| Method           | Description                                      |
-| ---------------- | ------------------------------------------------ |
-| `Start()`        | Pre-creates `min` objects and activates the pool  |
-| `Checkout() T`   | Gets an object from the pool (blocks if exhaused) |
-| `Checkin(T)`     | Returns an object to the pool                    |
-| `Current() int`  | Returns current number of objects in the pool    |
-| `HighWaterMark()`| Returns the peak number of objects created       |
-| `Close()`        | Destroys all objects and shuts down the pool      |
+| Method            | Description                                       |
+| ----------------- | ------------------------------------------------- |
+| `Start()`         | Pre-creates `min` objects and activates the pool  |
+| `Checkout() T`    | Gets an object from the pool (blocks if exhaused) |
+| `Checkin(T)`      | Returns an object to the pool                     |
+| `Current() int`   | Returns current number of objects in the pool     |
+| `HighWaterMark()` | Returns the peak number of objects created        |
+| `Close()`         | Destroys all objects and shuts down the pool      |
 
 ## Example
 

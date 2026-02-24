@@ -56,16 +56,16 @@ Fields without `constraints` tags are skipped during validation.
 
 | Name           | Data Type | Description                        | Status |
 | -------------- | --------- | ---------------------------------- | ------ |
-| `min`          | numeric   | Minimum value (inclusive)          | ✅      |
-| `max`          | numeric   | Maximum value (inclusive)          | ✅      |
-| `exclusiveMin` | numeric   | Minimum value (exclusive)         | ✅      |
-| `exclusiveMax` | numeric   | Maximum value (exclusive)         | ✅      |
-| `multipleOf`   | numeric   | Value must be a multiple of       | ✅      |
-| `max-length`   | string    | Maximum string length              | ✅      |
-| `min-length`   | string    | Minimum string length              | ✅      |
-| `pattern`      | string    | Regex pattern match                | ✅      |
-| `notnull`      | string    | Must not be empty                  | ✅      |
-| `enum`         | all       | Value must be one of listed values | ✅      |
+| `min`          | numeric   | Minimum value (inclusive)          | ✅     |
+| `max`          | numeric   | Maximum value (inclusive)          | ✅     |
+| `exclusiveMin` | numeric   | Minimum value (exclusive)          | ✅     |
+| `exclusiveMax` | numeric   | Maximum value (exclusive)          | ✅     |
+| `multipleOf`   | numeric   | Value must be a multiple of        | ✅     |
+| `max-length`   | string    | Maximum string length              | ✅     |
+| `min-length`   | string    | Minimum string length              | ✅     |
+| `pattern`      | string    | Regex pattern match                | ✅     |
+| `notnull`      | string    | Must not be empty                  | ✅     |
+| `enum`         | all       | Value must be one of listed values | ✅     |
 
 ## Usage
 

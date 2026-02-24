@@ -142,7 +142,7 @@ provider := impl.NewClaudeProviderWithConfig(&impl.ClaudeProviderConfig{
 | `OptionSystemInstructions` | `system`         | `string`   | System prompt (top-level field, not a message)                      |
 
 {{< callout type="info" >}}
-  Unlike OpenAI, Claude does not support `frequency_penalty`, `presence_penalty`, `seed`, `candidate_count (n)`, or `response_format`. These options are silently ignored.
+Unlike OpenAI, Claude does not support `frequency_penalty`, `presence_penalty`, `seed`, `candidate_count (n)`, or `response_format`. These options are silently ignored.
 {{< /callout >}}
 
 ## Generating Responses
@@ -220,7 +220,7 @@ resp, err := provider.Generate(ctx, "claude-sonnet-4-20250514", msg, nil)
 ```
 
 {{< callout type="warning" >}}
-  If you pass a `FilePart` with an image URL, the provider will include a text placeholder noting that Claude doesn't support image URLs directly. Download the image first and use `BinPart` instead.
+If you pass a `FilePart` with an image URL, the provider will include a text placeholder noting that Claude doesn't support image URLs directly. Download the image first and use `BinPart` instead.
 {{< /callout >}}
 
 ### Tool / Function Calling

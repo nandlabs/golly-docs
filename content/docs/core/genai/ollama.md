@@ -160,7 +160,7 @@ Since Ollama uses the OpenAI-compatible API, it supports the same options as the
 | `OptionSystemInstructions` | `messages[0]` (system) | `string`   | Prepended as system message    |
 
 {{< callout type="info" >}}
-  Not all models support all options. For example, vision models like `llava` support image inputs, while text-only models like `llama3` do not.
+Not all models support all options. For example, vision models like `llava` support image inputs, while text-only models like `llama3` do not.
 {{< /callout >}}
 
 ## Generating Responses
@@ -282,7 +282,7 @@ if err != nil {
 ```
 
 {{< callout type="info" >}}
-  Errors use the "openai" prefix because the Ollama provider delegates to the OpenAI implementation. The error messages still accurately describe the issue.
+Errors use the "openai" prefix because the Ollama provider delegates to the OpenAI implementation. The error messages still accurately describe the issue.
 {{< /callout >}}
 
 ## Deployment Patterns

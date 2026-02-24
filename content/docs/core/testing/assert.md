@@ -24,11 +24,13 @@ go get oss.nandlabs.io/golly/testing/assert
 ## Usage
 
 1. Import the library into your Go test file:
+
    ```go
    import "oss.nandlabs.io/golly/testing/assert"
    ```
 
 2. Use the assertion functions in your test cases:
+
    ```go
    func TestAdd(t *testing.T) {
        result := add(1, 2)
@@ -43,17 +45,17 @@ go get oss.nandlabs.io/golly/testing/assert
 
 ## Available Assertions
 
-| Function     | Description                                               |
-| ------------ | --------------------------------------------------------- |
-| `Equal`      | Asserts two values are equal                              |
-| `NotEqual`   | Asserts two values are not equal                          |
-| `True`       | Asserts a value is true                                   |
-| `False`      | Asserts a value is false                                  |
-| `Nil`        | Asserts a value is nil                                    |
-| `NotNil`     | Asserts a value is not nil                                |
-| `Contains`   | Asserts a string, array, slice, or map contains an element |
-| `NoError`    | Asserts an error is nil                                   |
-| `Error`      | Asserts an error is not nil                               |
+| Function   | Description                                                |
+| ---------- | ---------------------------------------------------------- |
+| `Equal`    | Asserts two values are equal                               |
+| `NotEqual` | Asserts two values are not equal                           |
+| `True`     | Asserts a value is true                                    |
+| `False`    | Asserts a value is false                                   |
+| `Nil`      | Asserts a value is nil                                     |
+| `NotNil`   | Asserts a value is not nil                                 |
+| `Contains` | Asserts a string, array, slice, or map contains an element |
+| `NoError`  | Asserts an error is nil                                    |
+| `Error`    | Asserts an error is not nil                                |
 
 ## Examples
 

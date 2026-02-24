@@ -106,11 +106,11 @@ opts2.Set(genai.OptionSystemInstructions, "You are a coding assistant.")
 
 Three built-in provider implementations are available in the `genai/impl` sub-package:
 
-| Provider               | Auth Mechanism                               | Documentation                                          |
-| ---------------------- | -------------------------------------------- | ------------------------------------------------------ |
-| **OpenAI**             | Bearer token (`Authorization: Bearer <key>`) | [OpenAI Provider]({{< relref "openai" >}})             |
-| **Claude (Anthropic)** | API key header (`x-api-key: <key>`)          | [Claude Provider]({{< relref "claude" >}})             |
-| **Ollama**             | None (local) or configurable for proxied     | [Ollama Provider]({{< relref "ollama" >}})             |
+| Provider               | Auth Mechanism                               | Documentation                              |
+| ---------------------- | -------------------------------------------- | ------------------------------------------ |
+| **OpenAI**             | Bearer token (`Authorization: Bearer <key>`) | [OpenAI Provider]({{< relref "openai" >}}) |
+| **Claude (Anthropic)** | API key header (`x-api-key: <key>`)          | [Claude Provider]({{< relref "claude" >}}) |
+| **Ollama**             | None (local) or configurable for proxied     | [Ollama Provider]({{< relref "ollama" >}}) |
 
 **Quick start for each:**
 
