@@ -7,3 +7,25 @@
 <script src="{{ "js/version-selector.js" | relURL }}"></script>
 {{- end -}}
 {{- end -}}
+
+{{- /* Parallax scroll-reveal for home page sections */ -}}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var targets = document.querySelectorAll('.category-section, .why-golly-section');
+        if (!targets.length) return;
+        targets.forEach(function (el) { el.classList.add('scroll-reveal'); });
+        if ('IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('revealed');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+            targets.forEach(function (el) { observer.observe(el); });
+        } else {
+            targets.forEach(function (el) { el.classList.add('revealed'); });
+        }
+    });
+</script>
