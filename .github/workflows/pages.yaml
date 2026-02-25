@@ -1,10 +1,12 @@
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
+# Workflow for building and deploying a versioned Hugo site to GitHub Pages
 name: Deploy Hugo site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Runs on pushes targeting the default branch or version tags
   push:
     branches: ["main"]
+    tags:
+      - "v*"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -31,12 +33,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.126.3
+      HUGO_VERSION: 0.155.3
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # fetch all history for .GitInfo and .Lastmod
+          fetch-depth: 0 # fetch all history for .GitInfo, .Lastmod and tags
           submodules: recursive
       - name: Setup Go
         uses: actions/setup-go@v5
@@ -49,15 +51,39 @@ jobs:
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-      - name: Build with Hugo
+
+      # Build the current (latest) docs
+      - name: Build latest docs
         env:
-          # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
           hugo \
             --gc --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      # Build versioned snapshots from tags
+      # Each tag (e.g., v1.2.0) is built into public/<version>/
+      - name: Build versioned docs
+        env:
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: |
+          BASE_URL="${{ steps.pages.outputs.base_url }}"
+          for tag in $(git tag -l 'v*' --sort=-version:refname); do
+            echo "Building docs for ${tag}..."
+            git checkout "${tag}" -- content/ hugo.yaml 2>/dev/null || continue
+
+            # Override baseURL for the versioned subdirectory
+            hugo \
+              --gc --minify \
+              --baseURL "${BASE_URL}/${tag}/" \
+              --destination "public/${tag}/"
+
+            # Restore current branch content
+            git checkout HEAD -- content/ hugo.yaml
+          done
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

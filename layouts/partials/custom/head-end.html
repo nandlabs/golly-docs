@@ -1,0 +1,9 @@
+{{- /* Version Selector - injected via Hextra custom/head-end hook */ -}}
+{{- with .Site.Params.versioning -}}
+{{- if .enable -}}
+<script id="version-config" type="application/json">
+{"current":"{{ .current }}","versions":[{{ range $i, $v := .versions }}{{ if $i }},{{ end }}{"label":"{{ $v.label }}","url":"{{ $v.url }}","current":{{ if $v.current }}true{{ else }}false{{ end }}}{{ end }}]}
+</script>
+<script src="{{ " js/version-selector.js" | relURL }}"></script>
+{{- end -}}
+{{- end -}}
