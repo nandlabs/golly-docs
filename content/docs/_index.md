@@ -3,6 +3,8 @@ title: Golly
 draft: false
 prev: /docs
 next: /docs/core
+sidebar:
+  open: true
 ---
 
 Welcome to **Golly**, a robust collection of enterprise-grade, open-source libraries written in Go (Golang). This project is designed to simplify and enhance the development of modern software systems by providing developers with highly reusable, well-documented utilities tailored to meet enterprise needs. Whether you are building scalable microservices, crafting middleware, or handling complex messaging systems, Golly offers solutions to common programming challenges while adhering to Go's philosophy of simplicity and performance.

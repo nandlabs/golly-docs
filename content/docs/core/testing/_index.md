@@ -3,6 +3,8 @@ title: Testing Package
 draft: false
 prev: /docs/core/semver
 next: /docs/core/textutils
+sidebar:
+  open: true
 ---
 
 The `testing` package provides utilities and helpers for writing and running automated tests in Go applications. It offers enhanced testing capabilities beyond what's available in Go's standard library.

@@ -3,6 +3,8 @@ title: GenAI Package
 draft: false
 prev: /docs/core/fsutils
 next: /docs/core/ioutils
+sidebar:
+  open: true
 ---
 
 The `genai` package defines the provider abstraction for Generative AI services. It provides interfaces and types for interacting with large language models (LLMs) in a provider-agnostic way.

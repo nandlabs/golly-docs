@@ -3,6 +3,8 @@ title: Golly Core
 draft: false
 prev: /docs
 next: /docs/core/assertion
+sidebar:
+  open: true
 ---
 
 This section contains the documentation for all the core packages available in Golly, a robust collection of enterprise-grade Go libraries.
