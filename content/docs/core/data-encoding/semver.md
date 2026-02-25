@@ -1,5 +1,5 @@
 ---
-title: SemVer Package
+title: SemVer
 weight: 3
 ---
 

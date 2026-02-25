@@ -1,5 +1,5 @@
 ---
-title: Assert Package
+title: Assert
 draft: false
 weight: 1
 ---

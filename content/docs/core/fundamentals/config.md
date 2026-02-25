@@ -1,5 +1,5 @@
 ---
-title: Config Package
+title: Config
 weight: 4
 ---
 

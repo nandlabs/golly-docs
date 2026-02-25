@@ -1,5 +1,5 @@
 ---
-title: Turbo Package
+title: Turbo
 weight: 3
 sidebar:
   open: true

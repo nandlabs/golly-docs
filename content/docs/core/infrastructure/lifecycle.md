@@ -1,5 +1,5 @@
 ---
-title: Lifecycle Package
+title: Lifecycle
 weight: 4
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: UUID Package
+title: UUID
 weight: 5
 ---
 

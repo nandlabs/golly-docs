@@ -1,5 +1,5 @@
 ---
-title: Messaging Package
+title: Messaging
 weight: 4
 ---
 

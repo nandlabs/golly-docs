@@ -125,6 +125,7 @@ layout: hextra-home
 </div>
 
 {{< hextra/feature-grid >}}
+{{< hextra/feature-card title="Chrono" subtitle="Task scheduler with cron, interval, and one-shot scheduling, pluggable storage, and cluster support." link="docs/core/infrastructure/chrono" >}}
 {{< hextra/feature-card title="L3 Logger" subtitle="Lightweight Levelled Logger with console/file writers, per-package log levels, and async support." link="docs/core/infrastructure/l3" >}}
 {{< hextra/feature-card title="VFS" subtitle="Virtual File System with unified interface across local storage, AWS S3, GCP, and Azure." link="docs/core/infrastructure/vfs" >}}
 {{< hextra/feature-card title="Lifecycle" subtitle="Component lifecycle management with dependency ordering, start/stop hooks, and state tracking." link="docs/core/infrastructure/lifecycle" >}}

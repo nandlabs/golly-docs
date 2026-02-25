@@ -1,5 +1,5 @@
 ---
-title: Clients Package
+title: Clients
 weight: 1
 ---
 

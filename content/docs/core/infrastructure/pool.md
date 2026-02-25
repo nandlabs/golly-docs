@@ -1,5 +1,5 @@
 ---
-title: Pool Package
+title: Pool
 weight: 6
 ---
 

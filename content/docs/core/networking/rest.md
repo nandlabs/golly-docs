@@ -1,5 +1,5 @@
 ---
-title: REST Package
+title: REST
 weight: 2
 ---
 

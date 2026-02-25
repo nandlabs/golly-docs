@@ -1,5 +1,5 @@
 ---
-title: CLI Package
+title: CLI
 weight: 2
 ---
 

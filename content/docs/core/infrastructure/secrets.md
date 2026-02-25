@@ -1,5 +1,5 @@
 ---
-title: Secrets Package
+title: Secrets
 weight: 7
 ---
 

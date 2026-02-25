@@ -1,5 +1,5 @@
 ---
-title: Data Package
+title: Data
 weight: 2
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Managers Package
+title: Managers
 weight: 5
 ---
 

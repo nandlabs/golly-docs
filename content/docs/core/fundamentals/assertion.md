@@ -1,5 +1,5 @@
 ---
-title: Assertion Package
+title: Assertion
 weight: 1
 ---
 

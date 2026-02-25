@@ -1,5 +1,5 @@
 ---
-title: Codec Package
+title: Codec
 weight: 1
 sidebar:
   open: true

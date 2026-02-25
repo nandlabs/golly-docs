@@ -1,5 +1,5 @@
 ---
-title: Collections Package
+title: Collections
 weight: 3
 ---
 

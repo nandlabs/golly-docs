@@ -1,5 +1,5 @@
 ---
-title: IO Utilities Package
+title: IO Utilities
 weight: 2
 ---
 

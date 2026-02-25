@@ -1,5 +1,5 @@
 ---
-title: VFS Package
+title: VFS
 weight: 8
 ---
 
