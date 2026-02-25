@@ -7,7 +7,7 @@ Get up and running with Golly in minutes.
 
 ## Prerequisites
 
-- **Go 1.22** or later — [Download Go](https://go.dev/dl/)
+- **Go 1.24** or later — [Download Go](https://go.dev/dl/)
 - A Go module-enabled project (`go.mod`)
 
 ## Installation
