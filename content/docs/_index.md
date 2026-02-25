@@ -1,8 +1,6 @@
 ---
 title: Golly
 draft: false
-prev: /docs
-next: /docs/core
 sidebar:
   open: true
 ---

@@ -2,8 +2,6 @@
 title: Assert Package
 draft: false
 weight: 1
-prev: /docs/core/testing
-next: /docs/core/textutils
 ---
 
 The `testing/assert` package is a flexible and extensible assertion library designed to provide a unified interface for asserting conditions in Go tests. It allows developers to integrate assertion functionality without being tied to a specific assertion library.
