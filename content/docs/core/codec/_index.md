@@ -3,6 +3,8 @@ title: Codec Package
 draft: false
 prev: /docs/core/clients
 next: /docs/core/collections
+sidebar:
+  open: true
 ---
 
 The `codec` package provides a unified interface for encoding and decoding structured data formats such as JSON, XML, and YAML. It offers a consistent API for serialization and deserialization operations, along with built-in validation capabilities.

@@ -3,6 +3,8 @@ title: Turbo Package
 draft: false
 prev: /docs/core/textutils
 next: /docs/core/uuid
+sidebar:
+  open: true
 ---
 
 The `turbo` package provides a high-performance, lightweight HTTP routing framework for Go applications. It offers enterprise-grade routing capabilities with a focus on simplicity, flexibility, and performance.
