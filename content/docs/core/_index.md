@@ -11,23 +11,28 @@ The core packages provide the foundation for Golly's functionality, offering sol
 
 ## Available Core Packages
 
-- **Assertion**: A flexible and extensible assertion library for consistent testing
-- **CLI**: Command-line interface tools for building complex applications
-- **Clients**: Flexible package to manage different types of clients
-- **Codec**: Unified interface for encoding and decoding structured data
-- **Config**: Configuration management utilities
-- **Data**: Data structures and schema management
-- **ErrUtils**: Error handling utilities
-- **FnUtils**: Function utilities for common operations
-- **FSUtils**: File system utilities
-- **IOUtils**: Input/output utilities
-- **L3**: Lightweight, level-based logging library
-- **Lifecycle**: Application lifecycle management
-- **Messaging**: Interface for producing and consuming messages
-- **REST**: Comprehensive HTTP client package
-- **SemVer**: Semantic versioning utilities
-- **Testing**: Testing utilities
-- **TextUtils**: Text manipulation utilities
-- **Turbo**: Performance optimization utilities
-- **UUID**: UUID generation and validation
-- **VFS**: Virtual file system implementation
+- **[Assertion]({{< relref "assertion" >}})**: A flexible and extensible assertion library for consistent testing
+- **[CLI]({{< relref "cli" >}})**: Command-line interface tools for building complex applications
+- **[Clients]({{< relref "clients" >}})**: Flexible package to manage different types of clients with auth support
+- **[Codec]({{< relref "codec" >}})**: Unified interface for encoding and decoding structured data (JSON, XML, YAML) with struct validation
+- **[Collections]({{< relref "collections" >}})**: Generic data structures — ArrayList, LinkedList, HashSet, Queue, Stack
+- **[Config]({{< relref "config" >}})**: Configuration management utilities
+- **[Data]({{< relref "data" >}})**: Data structures and schema management
+- **[ErrUtils]({{< relref "errutils" >}})**: Error handling utilities
+- **[FnUtils]({{< relref "fnutils" >}})**: Function utilities for common operations
+- **[FSUtils]({{< relref "fsutils" >}})**: File system utilities
+- **[GenAI]({{< relref "genai" >}})**: Generative AI provider abstraction — OpenAI, Claude (Anthropic), and Ollama
+- **[IOUtils]({{< relref "ioutils" >}})**: Input/output utilities
+- **[L3]({{< relref "l3" >}})**: Lightweight, level-based logging library
+- **[Lifecycle]({{< relref "lifecycle" >}})**: Application lifecycle management
+- **[Managers]({{< relref "managers" >}})**: Thread-safe generic item registry
+- **[Messaging]({{< relref "messaging" >}})**: Interface for producing and consuming messages
+- **[Pool]({{< relref "pool" >}})**: Generic thread-safe object pool with lifecycle management
+- **[REST]({{< relref "rest" >}})**: Comprehensive HTTP client package with auth, circuit breaker, and retry
+- **[Secrets]({{< relref "secrets" >}})**: Secrets management utilities
+- **[SemVer]({{< relref "semver" >}})**: Semantic versioning utilities
+- **[Testing]({{< relref "testing" >}})**: Testing utilities and assertion library
+- **[TextUtils]({{< relref "textutils" >}})**: Text manipulation utilities and ASCII constants
+- **[Turbo]({{< relref "turbo" >}})**: High-performance HTTP routing framework with middleware, auth, and CORS
+- **[UUID]({{< relref "uuid" >}})**: UUID generation and validation
+- **[VFS]({{< relref "vfs" >}})**: Virtual file system implementation for local, S3, GCS, and more

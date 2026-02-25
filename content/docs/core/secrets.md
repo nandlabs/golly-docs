@@ -1,8 +1,8 @@
 ---
 title: Secrets Package
 draft: false
-prev: /docs/core/assertion
-next: /docs/core/testing
+prev: /docs/core/rest
+next: /docs/core/semver
 ---
 
 The `secrets` package provides a secure framework for managing credentials and secrets in Go applications. It offers a unified interface for storing, retrieving, and encrypting sensitive information across various storage backends.

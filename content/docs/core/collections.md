@@ -1,7 +1,7 @@
 ---
 title: Collections Package
 draft: false
-prev: /docs/core/clients
+prev: /docs/core/codec
 next: /docs/core/config
 ---
 

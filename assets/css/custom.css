@@ -1,0 +1,100 @@
+/* Version Selector Dropdown */
+.version-selector {
+  position: relative;
+  display: inline-block;
+  margin-left: 0.25rem;
+}
+
+.version-selector-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #374151;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+  line-height: 1.5;
+}
+
+.version-selector-btn:hover {
+  background-color: #e5e7eb;
+  border-color: #9ca3af;
+}
+
+:root.dark .version-selector-btn {
+  color: #d1d5db;
+  background-color: #374151;
+  border-color: #4b5563;
+}
+
+:root.dark .version-selector-btn:hover {
+  background-color: #4b5563;
+  border-color: #6b7280;
+}
+
+/* Dropdown menu - hidden by default */
+.version-selector-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  min-width: 150px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  padding: 4px;
+  overflow: hidden;
+}
+
+:root.dark .version-selector-menu {
+  background: #1f2937;
+  border-color: #374151;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+/* Show when open */
+.version-selector-open {
+  display: block;
+}
+
+.version-selector-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  color: #374151;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.1s ease;
+}
+
+.version-selector-item:hover {
+  background-color: #f3f4f6;
+  text-decoration: none;
+}
+
+:root.dark .version-selector-item {
+  color: #d1d5db;
+}
+
+:root.dark .version-selector-item:hover {
+  background-color: #374151;
+}
+
+.version-current {
+  font-weight: 600;
+  color: #2563eb;
+}
+
+:root.dark .version-current {
+  color: #60a5fa;
+}

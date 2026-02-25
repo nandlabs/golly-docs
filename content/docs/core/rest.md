@@ -1,8 +1,8 @@
 ---
 title: REST Package
 draft: false
-prev: /docs/core/messaging
-next: /docs/core/semver
+prev: /docs/core/pool
+next: /docs/core/secrets
 ---
 
 The `rest` package provides a comprehensive toolkit for building and consuming RESTful APIs in Go. It offers both client and server implementations with a rich set of features for building robust, production-ready web services.

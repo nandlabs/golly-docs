@@ -2,7 +2,7 @@
 title: Clients Package
 draft: false
 prev: /docs/core/cli
-next: /docs/core/collections
+next: /docs/core/codec
 ---
 
 The `clients` package provides utility features for building robust and resilient client implementations in Go. It includes essential patterns for creating fault-tolerant applications that can gracefully handle communication failures with external services.

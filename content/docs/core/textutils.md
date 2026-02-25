@@ -1,6 +1,8 @@
 ---
 title: Text Utilities
 draft: false
+prev: /docs/core/testing
+next: /docs/core/turbo
 ---
 
 The `textutils` package provides constants and utilities for working with text and character data in Go. It offers a comprehensive set of constants for ASCII characters and strings to make text processing code more readable and maintainable.

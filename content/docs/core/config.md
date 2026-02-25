@@ -1,7 +1,7 @@
 ---
 title: Config Package
 draft: false
-prev: /docs/core/codec
+prev: /docs/core/collections
 next: /docs/core/data
 ---
 

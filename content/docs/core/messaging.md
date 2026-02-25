@@ -1,8 +1,8 @@
 ---
 title: Messaging Package
 draft: false
-prev: /docs/core/lifecycle
-next: /docs/core/rest
+prev: /docs/core/managers
+next: /docs/core/pool
 ---
 
 The Messaging package provides a set of tools and utilities for handling messaging within your application. It includes features such as message serialization, deserialization, and transport mechanisms.

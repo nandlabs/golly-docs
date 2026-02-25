@@ -2,6 +2,10 @@
 
 This repository is for the documentation of the [Golly project](https://github.com/nandlabs/golly).
 
+## Documentation Versioning
+
+This site supports versioned documentation tied to release tags. For a comprehensive guide on how versioning works, how to publish new versions, and troubleshooting, see [Versioning.md](Versioning.md).
+
 ## Contributing
 
 We welcome contributions to the project. If you find a bug or would like to
