@@ -1,25 +1,37 @@
-**IMPORTANT: Please do not create a Pull Request without creating/linking an issue first.**
+## Description
 
-*Any change needs to be discussed before proceeding. Failure to do so may result in the rejection of the pull request.*
+Please provide a brief summary of the changes made to the documentation.
 
-Please provide enough information so that others can review your pull request:
+**Related Issue:** closes #XXXX
 
-<!-- You can skip this if you're fixing a typo or adding an app to the Showcase. -->
+## Type of Change
 
-Explain the **details** for making this change. What existing problem does the pull request solve?
+- [ ] New documentation page
+- [ ] Update to existing documentation
+- [ ] Fix (typo, broken link, formatting)
+- [ ] Site feature (layout, navigation, styling)
+- [ ] Versioning update
+- [ ] Other (describe below)
 
-<!-- Example: When "Adding a function to do X", explain why it is necessary to have a way to do X. -->
+## Pages Changed
 
-**Test plan (required)**
+List the pages/files affected by this PR:
 
-Demonstrate the code is solid. Example: The exact commands you ran and their output, screenshots / videos if the pull request changes UI.
+- `content/docs/core/...`
 
-<!-- Make sure tests pass on both Travis and Circle CI. -->
+## Checklist
 
-**Code formatting**
+- [ ] Hugo builds successfully (`hugo` runs without errors)
+- [ ] Content renders correctly on local preview (`hugo server`)
+- [ ] Links and navigation work as expected
+- [ ] Frontmatter (`title`, `weight`, `prev`, `next`) is set correctly
+- [ ] New pages are added to the appropriate section
+- [ ] Code examples are accurate and tested against the documented version
 
-<!-- See the simple style guide. -->
+## Screenshots (if applicable)
 
-**Closing issues**
+Add screenshots showing the rendered output for any visual changes.
 
-Put `closes #XXXX` in your comment to auto-close the issue that your PR fixes (if such).
+## Additional Notes
+
+Any other context reviewers should be aware of.
