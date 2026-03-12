@@ -69,6 +69,9 @@ params:
       - label: "v1.3.0"
         url: "/v1.3.0/"
         current: false
+      - label: "v1.2.9"
+        url: "/v1.2.9/"
+        current: false
 
   footer:
     displayCopyright: false

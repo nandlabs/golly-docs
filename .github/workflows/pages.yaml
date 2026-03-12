@@ -63,25 +63,52 @@ jobs:
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       # Build versioned snapshots from tags
-      # Each tag (e.g., v1.2.0) is built into public/<version>/
+      # Each tag (e.g., v1.3.0) is built into public/<version>/
+      # Only content/ is swapped per tag; hugo.yaml is kept from HEAD
+      # so the version switcher dropdown is consistent across all versions.
       - name: Build versioned docs
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
           BASE_URL="${{ steps.pages.outputs.base_url }}"
+
+          # Read the current version from hugo.yaml (already built as root site)
+          CURRENT_VERSION=$(grep '^\s*current:' hugo.yaml | head -1 | awk -F'"' '{print $2}')
+          echo "Current version: ${CURRENT_VERSION}"
+
           for tag in $(git tag -l 'v*' --sort=-version:refname); do
-            echo "Building docs for ${tag}..."
-            git checkout "${tag}" -- content/ hugo.yaml 2>/dev/null || continue
+            # Skip the current version — already built as the root site
+            if [ "${tag}" = "${CURRENT_VERSION}" ]; then
+              echo "Skipping ${tag} (current version, already built as root)"
+              continue
+            fi
 
-            # Override baseURL for the versioned subdirectory
-            hugo \
-              --gc --minify \
+            echo "::group::Building docs for ${tag}"
+
+            # Swap only content/ from the tag; keep current hugo.yaml for
+            # consistent version switcher and theme config across all versions
+            if ! git checkout "${tag}" -- content/ 2>/dev/null; then
+              echo "::warning::Could not checkout content for ${tag}, skipping"
+              echo "::endgroup::"
+              continue
+            fi
+
+            # Build into public/<version>/
+            if hugo --gc --minify \
               --baseURL "${BASE_URL}/${tag}/" \
-              --destination "public/${tag}/"
+              --destination "public/${tag}/"; then
+              echo "Successfully built ${tag}"
+            else
+              echo "::warning::Hugo build failed for ${tag}"
+            fi
 
-            # Restore current branch content
-            git checkout HEAD -- content/ hugo.yaml
+            # Restore current branch content and clean up any extra files
+            # that existed in the old tag but not in HEAD
+            git checkout HEAD -- content/
+            git clean -fd content/
+
+            echo "::endgroup::"
           done
 
       - name: Upload artifact
