@@ -60,15 +60,18 @@ params:
 
   versioning:
     enable: true
-    current: "v1.3.0"
+    current: "v1.4.0"
     versions:
-      - label: "v1.3.0 (latest)"
+      - label: "v1.4.0 (latest)"
         url: "/"
         current: true
       # To add older versions, deploy them to a subdirectory and add entries:
-      # - label: "v1.2.0"
-      #   url: "/v1.2.0/"
-      #   current: false
+      - label: "v1.3.0"
+        url: "/v1.3.0/"
+        current: false
+      - label: "v1.2.9"
+        url: "/v1.2.9/"
+        current: false
 
   footer:
     displayCopyright: false

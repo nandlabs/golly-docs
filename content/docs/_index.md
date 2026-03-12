@@ -48,6 +48,18 @@ Generative AI framework — provider-agnostic LLM interface with OpenAI, Claude,
 
 Test utilities — flexible assertion library for consistent, readable test code.
 
+## Cloud Extensions
+
+Golly provides cloud provider extensions that implement core interfaces (VFS, Messaging, GenAI) for real cloud services:
+
+### ☁️ [AWS]({{< relref "extensions/aws" >}})
+
+S3 storage, SQS/SNS messaging, and Bedrock GenAI — powered by the AWS SDK for Go v2.
+
+### ☁️ [GCP]({{< relref "extensions/gcp" >}})
+
+Cloud Storage, Pub/Sub messaging, and Vertex AI / Gemini GenAI — powered by official Google Cloud client libraries.
+
 ## Quick Start
 
 ```bash
@@ -67,5 +79,6 @@ func main() {
 
 {{< cards >}}
 {{< card link="getting-started" title="Getting Started" subtitle="Installation, examples, and first steps" icon="play" >}}
-{{< card link="core" title="All Packages" subtitle="Browse the complete package reference" icon="document-text" >}}
+{{< card link="core" title="Core Packages" subtitle="Browse the complete package reference" icon="document-text" >}}
+{{< card link="extensions" title="Cloud Extensions" subtitle="AWS and GCP integrations" icon="cloud" >}}
 {{< /cards >}}
